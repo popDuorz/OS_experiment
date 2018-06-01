@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A251A68D20C0E3F400E1701C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A251A68C20C0E3F400E1701C /* main.c */; };
+		A251A69D20C0E5E000E1701C /* shell.c in Sources */ = {isa = PBXBuildFile; fileRef = A251A69920C0E5DF00E1701C /* shell.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		A251A68920C0E3F400E1701C /* OS_experiment */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OS_experiment; sourceTree = BUILT_PRODUCTS_DIR; };
-		A251A68C20C0E3F400E1701C /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A251A69920C0E5DF00E1701C /* shell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = shell.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,49 @@
 		A251A68B20C0E3F400E1701C /* OS_experiment */ = {
 			isa = PBXGroup;
 			children = (
-				A251A68C20C0E3F400E1701C /* main.c */,
+				A251A69720C0E54700E1701C /* 5 */,
+				A251A69620C0E54200E1701C /* 4 */,
+				A251A69520C0E53B00E1701C /* 3 */,
+				A251A69420C0E53800E1701C /* 2 */,
+				A251A69320C0E53300E1701C /* 1 */,
 			);
 			path = OS_experiment;
+			sourceTree = "<group>";
+		};
+		A251A69320C0E53300E1701C /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				A251A69920C0E5DF00E1701C /* shell.c */,
+			);
+			path = 1;
+			sourceTree = "<group>";
+		};
+		A251A69420C0E53800E1701C /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 2;
+			sourceTree = "<group>";
+		};
+		A251A69520C0E53B00E1701C /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 3;
+			sourceTree = "<group>";
+		};
+		A251A69620C0E54200E1701C /* 4 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 4;
+			sourceTree = "<group>";
+		};
+		A251A69720C0E54700E1701C /* 5 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = 5;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A251A68D20C0E3F400E1701C /* main.c in Sources */,
+				A251A69D20C0E5E000E1701C /* shell.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
