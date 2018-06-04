@@ -176,28 +176,28 @@ int first(void)
 
 int main(void)
 {
-    char id;
-    while(1)
-    {
-        fflush(stdin);
-        printf("please enter the number of tasks(input q to exit)\n");
-        scanf("%c",&id);
-        getchar();
-        switch(id)
-        {
-            case '1':
-                first();
-                break;
-            case '2':
-                second();
-                break;
-            case '3':
-                third();
-                break;
-            default:
-                return 0;
-        }
-    }
-    return 0;
+   char id;
+   while(1)
+   {
+       fflush(stdin);
+       printf("please enter the number of tasks(input q to exit)\n");
+       scanf("%c",&id);
+       getchar();
+       switch(id)
+       {
+           case '1':
+               first();
+               break;
+           case '2':
+               second();
+               break;
+           case '3':
+               third();
+               break;
+           default:
+               return 0;
+       }
+   }
+   return 0;
 }
 
