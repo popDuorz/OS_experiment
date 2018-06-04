@@ -7,6 +7,7 @@ class VirtualStorage(object):
 		self.page = []
 		for i in range(num):
 			self.page.append(0)
+
 	def fifo(self,page_id):
 		if page_id in self.page:
 			self.hit = self.hit + 1
@@ -16,6 +17,7 @@ class VirtualStorage(object):
 			self.page[self.page_num - 1] = page_id
 			self.lost = self.lost + 1
 			self.print_result()
+
 	def lru(self,page_id):
 		if page_id in self.page:
 			self.hit = self.hit + 1
@@ -27,14 +29,16 @@ class VirtualStorage(object):
 				self.page[i] = self.page[i + 1]
 		self.page[self.page_num - 1] = page_id
 		self.print_result()
+
 	def print_result(self):
 		for i in range(self.page_num):
 			sys.stdout.write(str(self.page[i]) + '   ')
 		sys.stdout.write(str(self.hit) + '   ' + str(self.lost) + '\n')
+
 if __name__ == '__main__':
 	# content = [1,2,3,4,2,1,5,6,2,1,2,3,7,6,3,2,1,2,3,6]
 	content = [1, 2, 3, 4, 2, 1]
-	mem = VirtualStorage(4)
+	virtual_storage = VirtualStorage(4)
 	print('1   2   3   4  hit lost\n')
 	for i in range(len(content)):
-		mem.lru(content[i])
+		virtual_storage.lru(content[i])
