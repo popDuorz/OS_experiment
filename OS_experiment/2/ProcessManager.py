@@ -100,9 +100,25 @@ class processor(object):
 				self.rr()
 				
 if __name__  ==  '__main__':
-	processor = processor()
+    processor = processor()
 	# processor.create()
-	processor.sjf()
+    print('1.fcfs')
+    print('2.rr')
+    print('3.sjf')
+    print('4.hrn')
+    print('5.quit')
+    while (1):  	
+        choice = input('Choose a approach to run processes:')
+        if choice == '1':
+            processor.fcfs()
+        elif choice == '2':
+            processor.rr()
+        elif choice == '3':
+            processor.sjf()
+        elif choice == '4':
+            processor.hrn()
+        else:
+            break
 
 
 

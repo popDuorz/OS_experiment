@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt 
 class Disk(object):
 	def __init__(self):
-		self.list = [98,183,37,122,14,124,65,67]
+		self.list = [98,183,37,122,14,124,65,69]
 		self.position = 100
 		self.move = 0
 		self.x = [100]
@@ -59,7 +59,12 @@ if __name__ == '__main__':
 	disk = Disk()
 	print("initial position",disk.position)
 	disk.scan(1)
-	plt.plot(disk.x,disk.y,label='path',linewidth=3,color='r',marker='o', markerfacecolor='blue',markersize=12)
+	plt.figure(figsize = (10,8))
+	ax = plt.axes()
+	plt.plot(disk.x, disk.y, label='path', linewidth=0, color='white', marker='o', markerfacecolor='red',markersize='5')
+	for i in range(0,len(disk.x) - 1):
+		ax.annotate("", xy=(disk.x[i+1], disk.y[i+1]), xytext=(disk.x[i], disk.y[i]), arrowprops=dict(arrowstyle="->"))
+	# plt.plot(disk.x,disk.y,label='path',linewidth=3,color='black', marker='o', markerfacecolor='red',markersize=12)
 	plt.xlabel('position')
 	plt.ylabel('No.')
 	plt.legend()
