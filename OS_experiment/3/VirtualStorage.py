@@ -95,7 +95,7 @@ if __name__ == '__main__':
         for i in range(int(page_num)):
             print('0', end='   ')
         print()
-        for i in range(int(content)):
+        for i in range(len(content)):
             virtual_storage.lru(content[i])
     hitRatio = float(virtual_storage.hit/int(rw)) * 100
     print('The hit ratio is: %.1f%%' % hitRatio)

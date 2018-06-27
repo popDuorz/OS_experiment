@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
     print("Delete odd number files")
     print("Deleted files information:")
-    for i in range(1, 50, 2):
+    for i in range(0, 50, 2):
         disk.delete_file(files[i])
         files[i].print_file_info()
 

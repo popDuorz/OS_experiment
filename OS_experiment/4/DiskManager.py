@@ -16,6 +16,8 @@ class Disk(object):
 
     def sstf(self):
         pos = -1
+        print()
+        print('sstf route:')
         while len(self.list_for_sstf) != 0:
             for i in range(len(self.list_for_sstf)):
                 a = 100000
@@ -30,6 +32,7 @@ class Disk(object):
 
     def scan(self, cur_dir):
         direction = cur_dir
+        print('scan route:')
         while len(self.list_for_scan) != 0:
             if direction == 0:
                 a = 10000000
@@ -40,7 +43,7 @@ class Disk(object):
                         pos = i
                 if pos != -1:
                     self.move_for_scan = self.move_for_scan + abs(self.list_for_scan[pos] - self.position)
-                    print(self.list_for_scan[pos],"move length",self.move_for_scan)
+                    print(self.list_for_scan[pos],"scan move length",self.move_for_scan)
                     self.position = self.list_for_scan[pos]
                     self.x_for_scan.append(self.list_for_scan[pos])
                     self.list_for_scan.pop(pos)
